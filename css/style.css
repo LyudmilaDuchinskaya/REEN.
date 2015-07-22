@@ -28,6 +28,9 @@ a:link, a:visited {
 a:hover {
 	text-decoration: none;
 }
+input:focus {
+	outline: none;
+}
 /*   GENERAL STYLE   */
 html, body {
 	height: 100%;
@@ -67,6 +70,7 @@ html, body {
 }
 .contact-info--mail:hover:before {
 	background-position: 13px -18px;
+	cursor: pointer;
 }
 .contact-info--mail:before {
 	width: 11px;
@@ -75,7 +79,7 @@ html, body {
 	background-position: 13px -30px;
 }
 .contact-info--tel:before {
-	width: 7px;
+	width: 9px;
 	height: 13px;
 	margin: 0 10px 0 28px;
 	background-position: 9px -42px;
@@ -138,6 +142,67 @@ html, body {
 .socials__link--d:hover {
 	background: #eb6397 url('../img/sprites.png');
 	background-position: -150px -40px;
+}
+/*   NAV   */
+.nav {
+	height: 112px;
+	line-height: 112px;
+	border-bottom: 1px solid #e6e9ed;
+}
+.logo {
+	margin-top: 36px;
+}
+.main-menu__item {
+	display: inline-block;
+	position: relative;
+	height: 51px;
+	line-height: 51px;
+	text-transform: uppercase;
+	color: #506a85;
+	font-size: 0.833em;
+	font-weight: bold;
+	padding: 0 22px;
+	cursor: pointer;
+}
+.main-menu__item:hover {
+	color: #00bc9c;
+	background: #f5f7fa;
+	border-radius: 2px;
+	border: 1px solid #e6e9ed;
+	padding: 0 20px;
+}
+.main-menu__inner {
+	display: none;
+}
+.main-menu__item:hover .main-menu__inner {
+	display: block;
+	position: absolute;
+	background: #f5f7fa;
+	color: #73879c;
+	width: 210px;
+	top: 48px;
+	left: -1px;
+	border: 1px solid #e6e9ed;
+	border-top: 0;
+}
+.main-menu__inner-item {
+	padding-left: 21px;
+}
+.main-menu__inner-item:hover {
+	background: #00bc9c;
+	color: #fff;
+}
+.search__input {
+	border: 0;
+	color: #506a85;
+}
+label[for="search1"] {
+	width: 16px;
+	height: 16px;
+	background: url('../img/sprites.png') 15px 0px;
+	float: right;
+	margin-top: 48px;
+	cursor: pointer;
 }
 
 
